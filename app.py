@@ -21,7 +21,7 @@ st.markdown(
 )
 st.title(""" Coffee Bean Quality Prediction App""")
 
-file = st.file_uploader("Please upload an image file", type=["jpg", "png"])
+file = st.file_uploader("Please upload an image file to predict the roast type.", type=["jpg", "png"])
 
 import cv2
 import numpy as np
