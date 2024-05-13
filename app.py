@@ -3,7 +3,7 @@ import tensorflow as tf
 
 
 st.set_option('deprecation.showfileUploaderEncoding', False)
-@st.cache
+@st.cache(allow_output_mutation=True)
 def load_model():
   model = tf.keras.models.load_model('vgg.hdf5')
   return model
